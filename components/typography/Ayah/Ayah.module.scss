@@ -1,0 +1,12 @@
+@use '../../../scss/' as *;
+
+.ayah {
+	font-size: $h4;
+	font-weight: $bold;
+}
+
+@media screen and (max-width: $md) {
+	.ayah {
+		font-size: $h5;
+	}
+}

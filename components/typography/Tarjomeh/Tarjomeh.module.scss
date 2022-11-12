@@ -1,0 +1,12 @@
+@use '../../../scss/' as *;
+
+.tarjomeh {
+	font-size: $h5;
+	font-weight: $regular;
+}
+
+@media screen and (max-width: $md) {
+	.tarjomeh {
+		font-size: $h6;
+	}
+}

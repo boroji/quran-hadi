@@ -5,7 +5,7 @@ export default function Home() {
 		<>
 			<HeadTag title='Quran Hadi' />
 			<h1>بسم الله الرحمن الرحیم</h1>
-			<h2>This is the staging branch</h2>
+			<h2>بسم الله الرحمن الرحیم</h2>
 		</>
 	)
 }
