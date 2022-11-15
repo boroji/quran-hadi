@@ -13,7 +13,7 @@ const Ayah = ({ id, className, text }) => {
 	const dynamicClassName = `${ArabicFont.variable} ${ayah} ${className ? className : ''}`
 
 	return (
-		<h1 id={id} className={dynamicClassName} style={ArabicFont.style}>
+		<h1 dir='rtl' id={id} className={dynamicClassName} style={ArabicFont.style}>
 			{text}
 		</h1>
 	)
