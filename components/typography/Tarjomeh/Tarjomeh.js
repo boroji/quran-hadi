@@ -1,13 +1,19 @@
-import ArabicFont from 'utils/ArabicFont'
 import styles from './Tarjomeh.module.scss'
+import { Noto_Sans_Arabic } from '@next/font/google'
+
+const ArabicFont = Noto_Sans_Arabic({
+	variable: '--noto-sans',
+	fallback: ['Noto Sans Arabic', 'Vazirmatn'],
+	display: 'block',
+})
 
 const Tarjomeh = ({ id, className, text }) => {
 	const { tarjomeh } = styles
 
-	const dynamicClassName = `${ArabicFont.className} ${tarjomeh} ${className ? className : ''}`
+	const dynamicClassName = `${ArabicFont.variable} ${tarjomeh} ${className ? className : ''}`
 
 	return (
-		<h2 id={id} className={dynamicClassName}>
+		<h2 id={id} className={dynamicClassName} style={ArabicFont.style}>
 			{text}
 		</h2>
 	)

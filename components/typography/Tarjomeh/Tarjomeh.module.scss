@@ -2,7 +2,8 @@
 
 .tarjomeh {
 	font-size: $h5;
-	font-weight: 313s;
+	font-family: var(--noto-sans);
+	font-weight: 313;
 }
 
 @media screen and (max-width: $md) {
