@@ -1,0 +1,33 @@
+@use '../../../scss/' as *;
+
+.btn {
+	font-family: var(--noto-sans);
+	font-weight: 438;
+	cursor: pointer;
+	border-radius: $px-16;
+	padding: $px-12 $px-20;
+	line-height: $px-24;
+	display: inline-flex;
+	gap: $px-14;
+	align-items: center;
+	justify-content: center;
+	@include transition();
+}
+
+.primary {
+	&Dark {
+		@include PrimaryDark();
+	}
+	&Light {
+		@include PrimaryLight();
+	}
+}
+
+.secondary {
+	&Dark {
+		@include SecondaryDark();
+	}
+	&Light {
+		@include SecondaryLight();
+	}
+}

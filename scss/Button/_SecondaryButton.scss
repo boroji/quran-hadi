@@ -1,0 +1,42 @@
+@use '../px' as *;
+@use '../color' as *;
+@use '../shadow' as *;
+@use '../font' as *;
+
+@mixin SecondaryLight {
+	background-color: $secondary-92;
+	color: $secondary-30;
+	svg {
+		path {
+			fill: $secondary-30;
+		}
+	}
+	&:hover {
+		background-color: $secondary-88;
+		color: $secondary-20;
+		svg {
+			path {
+				fill: $secondary-20;
+			}
+		}
+	}
+}
+
+@mixin SecondaryDark {
+	background-color: transparentize($secondary-40, 0.8);
+	color: $secondary-80;
+	svg {
+		path {
+			fill: $secondary-80;
+		}
+	}
+	&:hover {
+		color: $secondary-88;
+		background-color: transparentize($secondary-40, 0.6);
+		svg {
+			path {
+				fill: $secondary-88;
+			}
+		}
+	}
+}

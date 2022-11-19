@@ -1,0 +1,40 @@
+@use '../px' as *;
+@use '../color' as *;
+@use '../shadow' as *;
+@use '../font' as *;
+
+@mixin PrimaryLight {
+	background-color: $primary-30;
+	color: $gray-100;
+	svg {
+		path {
+			fill: $gray-100;
+		}
+	}
+	box-shadow: $primary-shadow;
+	&:hover {
+		background-color: $primary-20;
+		box-shadow: $primary-shadow-hover;
+	}
+}
+
+@mixin PrimaryDark {
+	background-color: $primary-30;
+	color: $gray-100;
+	svg {
+		path {
+			fill: $gray-100;
+		}
+	}
+	box-shadow: $primary-shadow;
+	&:hover {
+		background-color: $primary-40;
+		color: $tertiary-20;
+		box-shadow: $primary-shadow-hover;
+		svg {
+			path {
+				fill: $tertiary-20;
+			}
+		}
+	}
+}
