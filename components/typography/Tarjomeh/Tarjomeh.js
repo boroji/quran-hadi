@@ -19,4 +19,4 @@ const Tarjomeh = ({ id, className, text }) => {
 	)
 }
 
-export default Tarjomeh
+export { Tarjomeh }
