@@ -1,0 +1,21 @@
+@use '../../../scss/' as *;
+
+.container {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 150;
+	@include transition();
+}
+
+.nav {
+	&Dark {
+		background-color: $tertiary-12;
+		box-shadow: $nav-shadow-dark;
+	}
+
+	&Light {
+		background-color: $gray-100;
+		box-shadow: $nav-shadow-light;
+	}
+}
