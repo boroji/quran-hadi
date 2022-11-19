@@ -1,4 +1,4 @@
-import Ayah from '@components/Verse/Ayah'
+import Ayah from '../components/Ayah/Ayah'
 import HeadTag from 'utils/HeadTag'
 
 export default function Home() {

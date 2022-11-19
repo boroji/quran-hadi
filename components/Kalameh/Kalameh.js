@@ -19,4 +19,4 @@ const Kalameh = ({ id, className, text }) => {
 	)
 }
 
-export { Kalameh }
+export default Kalameh
