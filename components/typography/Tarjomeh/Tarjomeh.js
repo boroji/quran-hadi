@@ -8,9 +8,9 @@ const ArabicFont = Noto_Sans_Arabic({
 })
 
 const Tarjomeh = ({ id, className, text }) => {
-	const { tarjomeh } = styles
+	const { typeStyle } = styles
 
-	const dynamicClassName = `${ArabicFont.variable} ${tarjomeh} ${className ? className : ''}`
+	const dynamicClassName = `${ArabicFont.variable} ${typeStyle} ${className ? className : ''}`
 
 	return (
 		<h2 dir='rtl' id={id} className={dynamicClassName} style={ArabicFont.style}>

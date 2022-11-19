@@ -1,0 +1,13 @@
+@use '../../scss/' as *;
+
+.container {
+	display: flex;
+	flex-direction: row-reverse;
+	gap: $px-14;
+}
+
+.words {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}

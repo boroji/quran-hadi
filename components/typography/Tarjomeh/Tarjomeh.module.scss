@@ -1,13 +1,16 @@
 @use '../../../scss/' as *;
 
-.tarjomeh {
+.typeStyle {
 	font-size: $h5;
+	color: $gray-40;
 	font-family: var(--noto-sans);
 	font-weight: 313;
+	text-align: center;
+	border-top: $px-2 solid $gray-90;
 }
 
 @media screen and (max-width: $md) {
-	.tarjomeh {
+	.typeStyle {
 		font-size: $h6;
 	}
 }

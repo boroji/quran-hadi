@@ -1,13 +1,15 @@
 @use '../../../scss/' as *;
 
-.ayah {
+.typeStyle {
 	font-size: $h4;
+	color: $gray-10;
 	font-family: var(--noto-sans);
 	font-weight: 626;
+	text-align: center;
 }
 
 @media screen and (max-width: $md) {
-	.ayah {
+	.typeStyle {
 		font-size: $h5;
 	}
 }

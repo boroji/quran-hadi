@@ -1,4 +1,4 @@
-import styles from './Ayah.module.scss'
+import styles from './Kalameh.module.scss'
 import { Noto_Sans_Arabic } from '@next/font/google'
 
 const ArabicFont = Noto_Sans_Arabic({
@@ -7,10 +7,10 @@ const ArabicFont = Noto_Sans_Arabic({
 	display: 'block',
 })
 
-const Ayah = ({ id, className, text }) => {
-	const { ayah } = styles
+const Kalameh = ({ id, className, text }) => {
+	const { typeStyle } = styles
 
-	const dynamicClassName = `${ArabicFont.variable} ${ayah} ${className ? className : ''}`
+	const dynamicClassName = `${ArabicFont.variable} ${typeStyle} ${className ? className : ''}`
 
 	return (
 		<h1 dir='rtl' id={id} className={dynamicClassName} style={ArabicFont.style}>
@@ -19,4 +19,4 @@ const Ayah = ({ id, className, text }) => {
 	)
 }
 
-export default Ayah
+export default Kalameh
