@@ -33,7 +33,13 @@ const Button = ({
 	const dynamicClassName = `${ArabicFont.variable} ${btn} ${buttonType} ${className ? className : ''}`
 
 	return (
-		<div dir='rtl' id={id} className={dynamicClassName} onClick={clickHandler} ref={refHandler}>
+		<div
+			dir='rtl'
+			id={id}
+			className={dynamicClassName}
+			onClick={clickHandler}
+			ref={refHandler}
+			style={ArabicFont.style}>
 			{iconLeft && iconLeft}
 			{text}
 			{iconRight && iconRight}
