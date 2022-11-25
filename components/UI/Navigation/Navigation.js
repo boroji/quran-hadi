@@ -1,6 +1,6 @@
 import styles from './Navigation.module.scss'
 import Button from '../Button/Button'
-import { useGlobalContext } from '../../../utils/GlobalAppState'
+import { useGlobalContext } from '@utils/GlobalAppState'
 
 const Navigation = ({ id, className }) => {
 	const { dark, darkHandler } = useGlobalContext()

@@ -1,4 +1,4 @@
-import HeadTag from 'utils/HeadTag'
+import HeadTag from '@utils/HeadTag'
 
 const QuranPage = () => {
 	return (

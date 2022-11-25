@@ -1,4 +1,4 @@
-import HeadTag from 'utils/HeadTag'
+import HeadTag from '@utils/HeadTag'
 import { useRouter } from 'next/router'
 
 const QuranWord = () => {

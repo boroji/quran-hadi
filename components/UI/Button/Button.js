@@ -1,5 +1,5 @@
 import styles from './Button.module.scss'
-import { useGlobalContext } from '../../../utils/GlobalAppState'
+import { useGlobalContext } from '@utils/GlobalAppState'
 import { Noto_Sans_Arabic } from '@next/font/google'
 
 const ArabicFont = Noto_Sans_Arabic({
