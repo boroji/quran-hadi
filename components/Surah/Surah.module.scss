@@ -1,0 +1,16 @@
+@use '../../scss/' as *;
+
+.container {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	gap: $px-24;
+}
+
+.shomareh {
+	font-size: $h6;
+	padding-right: $px-16;
+	border-right: $px-1 solid $gray-90;
+	color: $gray-10;
+	font-family: var(--noto-sans);
+}

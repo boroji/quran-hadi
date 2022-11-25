@@ -1,5 +1,5 @@
-import Kalameh from '../Kalameh/Kalameh'
-import Tarjomeh from '../Tarjomeh/Tarjomeh'
+import Kalameh from '@components/Kalameh/Kalameh'
+import Tarjomeh from '@components/Tarjomeh/Tarjomeh'
 import styles from './Ayah.module.scss'
 
 const Ayah = ({ text }) => {
