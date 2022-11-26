@@ -21,27 +21,25 @@ const Surah = ({ id, className, text, verse = false }) => {
 	}`
 
 	return (
-		<main
-			id={id}
-			className={container}>
+		<>
 			{text.map(ayah => {
-				const { words } = ayah
+				const { verse, words } = ayah
 				return (
-					<Ayah
-						key={ayah.id}
-						text={words}
-					/>
+					<main
+						id={id}
+						className={container}
+						key={ayah.id}>
+						<Ayah text={words} />
+						<p
+							dir='rtl'
+							className={dynamicClassName}
+							style={ArabicFont.style}>
+							{verse}
+						</p>
+					</main>
 				)
 			})}
-			{verse && (
-				<p
-					dir='rtl'
-					className={dynamicClassName}
-					style={ArabicFont.style}>
-					{verse}
-				</p>
-			)}
-		</main>
+		</>
 	)
 }
 
