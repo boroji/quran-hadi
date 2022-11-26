@@ -9,9 +9,7 @@ const Ayah = ({ text }) => {
 		<section className={container}>
 			{text.map(({ id, kalameh, tarjomeh }) => {
 				return (
-					<article
-						key={id}
-						className={words}>
+					<article key={id} className={words}>
 						<Kalameh text={kalameh} />
 						<Tarjomeh text={tarjomeh} />
 					</article>

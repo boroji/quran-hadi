@@ -15,16 +15,10 @@ const Kalameh = ({ id, className, text }) => {
 
 	const isDark = dark ? typeStyleDark : typeStyleLight
 
-	const dynamicClassName = `${ArabicFont.variable} ${typeStyle} ${isDark} ${
-		className ? className : ''
-	}`
+	const dynamicClassName = `${ArabicFont.variable} ${typeStyle} ${isDark} ${className ? className : ''}`
 
 	return (
-		<h1
-			dir='rtl'
-			id={id}
-			className={dynamicClassName}
-			style={ArabicFont.style}>
+		<h1 dir='rtl' id={id} className={dynamicClassName} style={ArabicFont.style}>
 			{text}
 		</h1>
 	)

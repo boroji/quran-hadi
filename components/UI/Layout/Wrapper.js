@@ -5,9 +5,7 @@ const Wrapper = ({ id, className, children }) => {
 
 	const dynamicClass = `${wrapper} ${className ? className : ''}`
 	return (
-		<div
-			id={id}
-			className={dynamicClass}>
+		<div id={id} className={dynamicClass}>
 			{children}
 		</div>
 	)

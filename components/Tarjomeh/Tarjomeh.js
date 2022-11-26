@@ -15,16 +15,10 @@ const Tarjomeh = ({ id, className, text }) => {
 
 	const isDark = dark ? typeStyleDark : typeStyleLight
 
-	const dynamicClassName = `${ArabicFont.variable} ${typeStyle} ${isDark} ${
-		className ? className : ''
-	}`
+	const dynamicClassName = `${ArabicFont.variable} ${typeStyle} ${isDark} ${className ? className : ''}`
 
 	return (
-		<h2
-			dir='rtl'
-			id={id}
-			className={dynamicClassName}
-			style={ArabicFont.style}>
+		<h2 dir='rtl' id={id} className={dynamicClassName} style={ArabicFont.style}>
 			{text}
 		</h2>
 	)
