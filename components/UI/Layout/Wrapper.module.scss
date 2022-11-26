@@ -1,11 +1,11 @@
 @use '../../../scss/' as *;
 
 .wrapper {
-	padding: $px-120 $px-96;
+	padding: $px-140 $px-96;
 }
 
 @media screen and (max-width: $md) {
 	.wrapper {
-		padding: $px-120 $px-16;
+		padding: $px-140 $px-16;
 	}
 }
