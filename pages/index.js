@@ -1,4 +1,4 @@
-import Surah from '@components/Surah/Surah'
+import Ayat from '@components/Ayat/Ayat'
 import Wrapper from '@components/UI/Layout/Wrapper'
 import HeadTag from '@utils/HeadTag'
 
@@ -7,7 +7,7 @@ export default function Home() {
 		<>
 			<HeadTag title='Quran Hadi' />
 			<Wrapper>
-				<Surah
+				<Ayat
 					text={[
 						{
 							id: '1:1:1',

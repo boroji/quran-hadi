@@ -1,5 +1,5 @@
 import Ayah from '@components/Ayah/Ayah'
-import styles from './Surah.module.scss'
+import styles from './Ayat.module.scss'
 import { Noto_Sans_Arabic } from '@next/font/google'
 import { useGlobalContext } from '@utils/GlobalAppState'
 
@@ -9,31 +9,23 @@ const ArabicFont = Noto_Sans_Arabic({
 	display: 'block',
 })
 
-const Surah = ({ id, className, text, verse = false }) => {
+const Ayat = ({ id, className, text }) => {
 	const { dark } = useGlobalContext()
 
 	const { container, shomareh, shomarehDark, shomarehLight } = styles
 
 	const isDark = dark ? shomarehDark : shomarehLight
 
-	const dynamicClassName = `${ArabicFont.variable} ${shomareh} ${isDark} ${
-		className ? className : ''
-	}`
+	const dynamicClassName = `${ArabicFont.variable} ${shomareh} ${isDark} ${className ? className : ''}`
 
 	return (
 		<>
 			{text.map(ayah => {
 				const { verse, words } = ayah
 				return (
-					<main
-						id={id}
-						className={container}
-						key={ayah.id}>
+					<main id={id} className={container} key={ayah.id}>
 						<Ayah text={words} />
-						<p
-							dir='rtl'
-							className={dynamicClassName}
-							style={ArabicFont.style}>
+						<p dir='rtl' className={dynamicClassName} style={ArabicFont.style}>
 							{verse}
 						</p>
 					</main>
@@ -43,4 +35,4 @@ const Surah = ({ id, className, text, verse = false }) => {
 	)
 }
 
-export default Surah
+export default Ayat
