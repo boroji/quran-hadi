@@ -16,16 +16,18 @@ const Ayat = ({ id, className, text }) => {
 
 	const isDark = dark ? shomarehDark : shomarehLight
 
-	const dynamicClassName = `${ArabicFont.variable} ${shomareh} ${isDark} ${className ? className : ''}`
+	const counterClass = `${ArabicFont.variable} ${shomareh} ${isDark}`
+
+	const dynamicClassName = `${container} ${className ? className : ''}`
 
 	return (
 		<>
 			{text.map(ayah => {
 				const { verse, words } = ayah
 				return (
-					<main id={id} className={container} key={ayah.id}>
+					<main id={id} className={dynamicClassName} key={ayah.id}>
 						<Ayah text={words} />
-						<p dir='rtl' className={dynamicClassName} style={ArabicFont.style}>
+						<p dir='rtl' className={counterClass} style={ArabicFont.style}>
 							{verse}
 						</p>
 					</main>

@@ -1,6 +1,11 @@
 @use '../../../scss/' as *;
 
 .wrapper {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: $px-24;
 	padding: $px-140 $px-96;
 }
 
