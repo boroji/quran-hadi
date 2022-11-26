@@ -2,10 +2,17 @@
 
 .typeStyle {
 	font-size: $h4;
-	color: $gray-10;
 	font-family: var(--noto-sans);
 	font-weight: 626;
 	text-align: center;
+
+	&Dark {
+		color: $gray-100;
+	}
+
+	&Light {
+		color: $gray-10;
+	}
 }
 
 @media screen and (max-width: $md) {

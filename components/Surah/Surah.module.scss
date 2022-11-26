@@ -8,9 +8,27 @@
 }
 
 .shomareh {
-	font-size: $h6;
-	padding-right: $px-16;
-	border-right: $px-1 solid $gray-90;
-	color: $gray-10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: $px-8;
+
+	width: $px-48;
+	height: $px-48;
+	overflow: clip;
+	border-radius: $px-160;
+
+	font-size: $p;
+	font-weight: 626;
 	font-family: var(--noto-sans);
+
+	&Dark {
+		background-color: transparentize($secondary-40, 0.9);
+		color: $secondary-80;
+	}
+
+	&Light {
+		color: $gray-20;
+		background-color: $gray-96;
+	}
 }

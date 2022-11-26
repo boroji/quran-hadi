@@ -2,11 +2,18 @@
 
 .typeStyle {
 	font-size: $h5;
-	color: $gray-40;
 	font-family: var(--noto-sans);
 	font-weight: 313;
 	text-align: center;
-	border-top: $px-2 solid $gray-90;
+	&Dark {
+		color: $primary-40;
+		border-top: $px-2 solid transparentize($secondary-40, 0.7);
+	}
+
+	&Light {
+		color: $gray-40;
+		border-top: $px-2 solid $gray-90;
+	}
 }
 
 @media screen and (max-width: $md) {

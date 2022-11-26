@@ -1,0 +1,11 @@
+@use '../../../scss/' as *;
+
+.wrapper {
+	padding: $px-120 $px-96;
+}
+
+@media screen and (max-width: $md) {
+	.typeStyle {
+		font-size: $h6;
+	}
+}

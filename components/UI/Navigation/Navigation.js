@@ -7,11 +7,18 @@ const Navigation = ({ id, className }) => {
 
 	const { container, navLight, navDark } = styles
 
-	const dynamicClassName = `${container} ${dark ? navDark : navLight} ${className ? className : ''}`
+	const dynamicClassName = `${container} ${dark ? navDark : navLight} ${
+		className ? className : ''
+	}`
 
 	return (
-		<nav id={id} className={dynamicClassName}>
-			<Button text={dark ? 'تیره' : 'روشن'} clickHandler={darkHandler} />
+		<nav
+			id={id}
+			className={dynamicClassName}>
+			<Button
+				text={dark ? 'روشن' : 'تیره'}
+				clickHandler={darkHandler}
+			/>
 		</nav>
 	)
 }

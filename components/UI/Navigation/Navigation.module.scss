@@ -5,6 +5,7 @@
 	position: fixed;
 	top: 0;
 	z-index: 150;
+	padding: $px-16;
 	@include transition();
 }
 
