@@ -11,6 +11,10 @@ export default function Home() {
 					text={[
 						{
 							id: '1:1:1',
+							surah: 'حمد',
+							surahNumber: '1',
+							juz: '1',
+							hizb: '1',
 							verse: '۱',
 							words: [
 								{
@@ -37,6 +41,10 @@ export default function Home() {
 						},
 						{
 							id: '1:2:1',
+							surah: 'حمد',
+							surahNumber: '1',
+							juz: '1',
+							hizb: '1',
 							verse: '۲',
 							words: [
 								{
