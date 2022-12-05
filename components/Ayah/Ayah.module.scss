@@ -5,6 +5,15 @@
 	flex-direction: row-reverse;
 	flex-wrap: wrap;
 	gap: $px-16;
+	padding-top: $px-24;
+
+	&Dark {
+		border-top: $px-4 solid transparentize($secondary-40, 0.4);
+	}
+
+	&Light {
+		border-top: $px-4 solid $gray-90;
+	}
 }
 
 .words {

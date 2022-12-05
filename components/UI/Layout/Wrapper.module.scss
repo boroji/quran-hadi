@@ -2,9 +2,9 @@
 
 .wrapper {
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: column;
 	flex-wrap: wrap;
-	align-items: center;
+	align-items: flex-end;
 	gap: $px-24;
 	padding: $px-140 $px-96;
 }
