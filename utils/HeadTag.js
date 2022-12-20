@@ -5,6 +5,7 @@ const HeadTag = ({ title }) => {
 		<>
 			<Head>
 				<title>{title}</title>
+				<meta name='facebook-domain-verification' content='yxy5valpnmjybra9otehjt7kxjh5ym' />
 				<link rel='icon' type='image/png' href='/favicon.png' />
 			</Head>
 		</>
